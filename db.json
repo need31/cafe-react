@@ -1,0 +1,46 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Espresso",
+      "precio": 8,
+      "imagen": "/src/assets/images/espresso.jpg",
+      "descripcion": "Café intenso preparado con granos seleccionados."
+    },
+    {
+      "id": 2,
+      "nombre": "Cappuccino",
+      "precio": 12,
+      "imagen": "/src/assets/images/cappuccino.jpg",
+      "descripcion": "Mezcla perfecta de café, leche y espuma."
+    },
+    {
+      "id": 3,
+      "nombre": "Latte",
+      "precio": 10,
+      "imagen": "/src/assets/images/latte.jpg",
+      "descripcion": "Café suave con abundante leche caliente."
+    },
+    {
+      "id": 4,
+      "nombre": "Americano",
+      "precio": 9,
+      "imagen": "/src/assets/images/americano.jpg",
+      "descripcion": "Café espresso con agua caliente."
+    },
+    {
+      "id": 5,
+      "nombre": "Mocha",
+      "precio": 13,
+      "imagen": "/src/assets/images/mocha.jpg",
+      "descripcion": "Delicioso café con chocolate y leche."
+    },
+    {
+      "id": 6,
+      "nombre": "Café Helado",
+      "precio": 14,
+      "imagen": "/src/assets/images/cafe-helado.jpg",
+      "descripcion": "Refrescante café servido con hielo."
+    }
+  ]
+}
