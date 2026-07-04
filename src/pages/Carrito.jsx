@@ -3,7 +3,7 @@ import Layout from "../components/layout/Layout";
 import { CarritoContext } from "../components/Context/CarritoContext";
 
 function Carrito() {
-    const { carrito, eliminarProducto, aumentarCantidad, disminuirCantidad, total } =
+    const { carrito, eliminarProducto, aumentarCantidad, disminuirCantidad, vaciarCarrito, total } =
         useContext(CarritoContext);
 
     return (
@@ -85,7 +85,10 @@ function Carrito() {
                                 </h2>
 
                                 <button
-    onClick={() => alert("¡Compra finalizada con éxito! Gracias por comprar en Café Aroma.")}
+    onClick={() => {
+        alert("¡Compra finalizada con éxito! Gracias por comprar en Café Aroma.");
+        vaciarCarrito();
+    }}
     className="mt-5 bg-[#4E342E] text-white px-8 py-3 rounded-lg hover:bg-[#6F4E37]"
 >
     Finalizar Compra

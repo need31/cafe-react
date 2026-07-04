@@ -3,15 +3,12 @@ import { createContext, useState } from "react";
 export const CarritoContext = createContext();
 
 function CarritoProvider({ children }) {
-
     const [carrito, setCarrito] = useState([]);
 
     const agregarAlCarrito = (producto) => {
-
         const existe = carrito.find(item => item.id === producto.id);
 
         if (existe) {
-
             const nuevoCarrito = carrito.map(item =>
                 item.id === producto.id
                     ? { ...item, cantidad: item.cantidad + 1 }
@@ -19,9 +16,7 @@ function CarritoProvider({ children }) {
             );
 
             setCarrito(nuevoCarrito);
-
         } else {
-
             setCarrito([
                 ...carrito,
                 {
@@ -29,9 +24,7 @@ function CarritoProvider({ children }) {
                     cantidad: 1
                 }
             ]);
-
         }
-
     };
 
     const eliminarProducto = (id) => {
@@ -39,7 +32,6 @@ function CarritoProvider({ children }) {
     };
 
     const aumentarCantidad = (id) => {
-
         setCarrito(
             carrito.map(item =>
                 item.id === id
@@ -47,11 +39,9 @@ function CarritoProvider({ children }) {
                     : item
             )
         );
-
     };
 
     const disminuirCantidad = (id) => {
-
         setCarrito(
             carrito.map(item =>
                 item.id === id
@@ -59,7 +49,10 @@ function CarritoProvider({ children }) {
                     : item
             ).filter(item => item.cantidad > 0)
         );
+    };
 
+    const vaciarCarrito = () => {
+        setCarrito([]);
     };
 
     const total = carrito.reduce(
@@ -68,7 +61,6 @@ function CarritoProvider({ children }) {
     );
 
     return (
-
         <CarritoContext.Provider
             value={{
                 carrito,
@@ -76,16 +68,13 @@ function CarritoProvider({ children }) {
                 eliminarProducto,
                 aumentarCantidad,
                 disminuirCantidad,
+                vaciarCarrito,
                 total
             }}
         >
-
             {children}
-
         </CarritoContext.Provider>
-
     );
-
 }
 
 export default CarritoProvider;
