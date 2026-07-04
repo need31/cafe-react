@@ -7,19 +7,19 @@ function ProductosDestacados() {
             id: 1,
             nombre: "Espresso",
             precio: 8,
-            imagen: "/images/espresso.jpg"
+            imagen: "/imagenes/espresso.jpg"
         },
         {
             id: 2,
             nombre: "Cappuccino",
             precio: 12,
-            imagen: "/images/cappuccino.jpg"
+            imagen: "/imagenes/cappuccino.jpg"
         },
         {
             id: 3,
             nombre: "Latte",
             precio: 10,
-            imagen: "/images/latte.jpg"
+            imagen: "/imagenes/latte.jpg"
         }
     ];
 

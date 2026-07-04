@@ -26,7 +26,7 @@ function Hero() {
         <div className="md:w-1/2 mt-10 md:mt-0 flex justify-center">
 
           <img
-  src="/images/hero.jpg"
+  src="/imagenes/hero.jpg"
   alt="Café Aroma"
   className="w-96"
 />
