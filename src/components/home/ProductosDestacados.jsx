@@ -7,19 +7,19 @@ function ProductosDestacados() {
             id: 1,
             nombre: "Espresso",
             precio: 8,
-            imagen: "/src/assets/images/espresso.jpg"
+            imagen: "/images/espresso.jpg"
         },
         {
             id: 2,
             nombre: "Cappuccino",
             precio: 12,
-            imagen: "/src/assets/images/cappuccino.jpg"
+            imagen: "/images/cappuccino.jpg"
         },
         {
             id: 3,
             nombre: "Latte",
             precio: 10,
-            imagen: "/src/assets/images/latte.jpg"
+            imagen: "/images/latte.jpg"
         }
     ];
 
@@ -35,18 +35,14 @@ function ProductosDestacados() {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-                    {
-                        productos.map((producto) => (
-
-                            <CardProducto
-                                key={producto.id}
-                                nombre={producto.nombre}
-                                precio={producto.precio}
-                                imagen={producto.imagen}
-                            />
-
-                        ))
-                    }
+                    {productos.map((producto) => (
+                        <CardProducto
+                            key={producto.id}
+                            nombre={producto.nombre}
+                            precio={producto.precio}
+                            imagen={producto.imagen}
+                        />
+                    ))}
 
                 </div>
 
