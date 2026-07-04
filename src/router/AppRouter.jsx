@@ -6,7 +6,7 @@ import Productos from "../pages/Productos";
 import Contacto from "../pages/Contacto";
 import Carrito from "../pages/Carrito";
 import Login from "../pages/Login";
-import Dashboard from "../pages/DashBoard";
+import Dashboard from "../pages/Dashboard";
 import NotFound from "../pages/NotFound";
 
 import PrivateRoute from "./PrivateRoute";
