@@ -32,10 +32,10 @@ function Nosotros() {
             <div>
 
               <img
-                src="/src/assets/images/nosotros.jpg"
-                alt="Nosotros"
-                className="rounded-xl shadow-lg"
-              />
+  src="/imagenes/cafe.jpg"
+  alt="Nosotros"
+  className="rounded-xl shadow-lg w-full h-80 object-cover"
+/>
 
             </div>
 
