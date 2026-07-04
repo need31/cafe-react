@@ -84,9 +84,12 @@ function Carrito() {
                                     Total: S/ {total}
                                 </h2>
 
-                                <button className="mt-5 bg-[#4E342E] text-white px-8 py-3 rounded-lg hover:bg-[#6F4E37]">
-                                    Finalizar Compra
-                                </button>
+                                <button
+    onClick={() => alert("¡Compra finalizada con éxito! Gracias por comprar en Café Aroma.")}
+    className="mt-5 bg-[#4E342E] text-white px-8 py-3 rounded-lg hover:bg-[#6F4E37]"
+>
+    Finalizar Compra
+</button>
                             </div>
                         </>
                     )}
