@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Layout from "../components/layout/Layout";
 import CardProducto from "../components/productos/CardProducto";
-import { obtenerProductos } from "../services/productoService";
+import { obtenerProductos } from "../services/ProductoService";
 
 function Productos() {
     const [productos, setProductos] = useState([]);
